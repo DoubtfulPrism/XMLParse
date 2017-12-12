@@ -1,4 +1,3 @@
-
 import xml.etree.ElementTree as ET
 
 input = '''
@@ -466,6 +465,8 @@ input = '''
     </Lpn>
   </Message>  
 '''
+input = open(rough_data.xml r)
+
 
 Message = ET.fromstring(input)
 lst = Message.findall('Lpn/LpnDetail')
