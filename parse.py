@@ -465,7 +465,6 @@ input = '''
     </Lpn>
   </Message>  
 '''
-input = open(rough_data.xml r)
 
 
 Message = ET.fromstring(input)
