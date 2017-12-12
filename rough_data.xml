@@ -1,12 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<tXML>
-  <Header>
-    <Source>Host</Source>
-    <Action_Type>Create</Action_Type>
-    <Message_Type>LPNConversion</Message_Type>
-    <Company_ID>55</Company_ID>
-  </Header>
-  <Message>
+<Message>
     <Lpn>
       <FacilityAliasID>ED</FacilityAliasID>
       <TCCompanyID>55</TCCompanyID>
@@ -468,4 +460,3 @@
       </LpnDetail>
     </Lpn>
   </Message>
-</tXML>
