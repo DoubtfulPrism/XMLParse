@@ -466,7 +466,6 @@ input = '''
   </Message>  
 '''
 
-
 Message = ET.fromstring(input)
 lst = Message.findall('Lpn/LpnDetail')
 print('LPN count:', len(lst))
