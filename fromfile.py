@@ -7,9 +7,8 @@ LPN = root.findall('Lpn/LpnDetail')
 print('LPN count:', len(LPN))
 
 for LPN in root.iter('Lpn'):
-    print('ReceivedDate', LPN.find('ReceivedDate').text)
-    print('FacilityAliasID', LPN.find('FacilityAliasID').text)
-
-for LpnDetail in root.iter('LpnDetail'):
-    print('Item', LpnDetail.find('Item').text)
-    print('ActualQuantity', LpnDetail.find('ActualQuantity').text)
+    for LpnDetail in root.iter('LpnDetail'):
+        print('ReceivedDate', LPN.find('ReceivedDate').text)
+        print('FacilityAliasID', LPN.find('FacilityAliasID').text)
+        print('Item', LpnDetail.find('Item').text)
+        print('ActualQuantity', LpnDetail.find('ActualQuantity').text)
