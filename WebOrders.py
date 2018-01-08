@@ -16,6 +16,6 @@ for WO in root.iter('SalesOrder'):
         print('ShipToStoreID', Address.find('ShipToStoreID').text)
 
 for ATGOrderNumber in root.iter('SalesOrder'):
-    newON = int(ATGOrderNumber.text) + 1
+    newON = str('o1009664116')
     ATGOrderNumber.text = str(newON)
 tree.write('output.xml')
