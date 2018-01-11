@@ -33,7 +33,7 @@ second1 = ET.SubElement(level2, 'Country')
 second1 = ET.SubElement(level2, 'ContactPhone')
 second1 = ET.SubElement(level2, 'ContactEmail')
 
-level1 = ET.SubElement(root, 'ShippingGroups')
+level1 = ET.SubElement(root,'ShippingGroups')
 level2 = ET.SubElement(level1, 'ShippingGroup')
 second2 = ET.SubElement(level2, 'GWSOrderNumber')
 second2 = ET.SubElement(level2, 'ATGOrderNumber')
@@ -46,8 +46,12 @@ second3 = ET.SubElement(level2, 'Type')
 second3 = ET.SubElement(level2, 'Rate')
 second3 = ET.SubElement(level2, 'Amount')
 
-level1 = ET.SubElement(level1, 'ShippingMethod')
+level1 = ET.SubElement(root, 'ShippingMethod')
 
 
 tree = ET.ElementTree(root)
 tree.write('output.xml', pretty_print=True, xml_declaration=True, encoding="utf-8")
+
+
+# with open("output.xml", 'w') as xml:
+#     print(tree, file=xml)
