@@ -1,5 +1,5 @@
-from xml.dom import minidom, Node
-import os
+from xml.dom import minidom
+
 
 root = minidom.Document()
 
@@ -9,6 +9,7 @@ root.appendChild(SalesOrder)
 
 ATGOrderNumber = root.createElement('ATGOrderNumber')
 SalesOrder.appendChild(ATGOrderNumber)
+ATGOrderNumber.appendChild(root.createTextNode('o65897'))
 
 
 CustomerID = root.createElement('CustomerID')
@@ -48,6 +49,9 @@ Addresses.appendChild(Address)
 
 ATGOrderNumber = root.createElement('ATGOrderNumber')
 Address.appendChild(ATGOrderNumber)
+
+
+
 Type = root.createElement('Type')
 Address.appendChild(Type)
 ShipToStoreID = root.createElement('ShipToStoreID')
