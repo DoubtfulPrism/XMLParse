@@ -5,7 +5,7 @@ import csv
 #     print(order.read())
 
 
-input_file = csv.DictReader(open("GWSOrder.csv"))
-
-for row in input_file:
-    print(row)
+# input_file = csv.DictReader(open("GWSOrder.csv"))
+#
+# for row in input_file:
+#     print(row)
